@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function redirectToPage() {
+            var selectedOption = document.getElementById("editor").value;
+            if (selectedOption === "productos") {
+                window.location.href = "productos.html";
+            } else if (selectedOption === "spte") {
+                window.location.href = "soportetecnico.html";
+            }
+        }
+    </script>
+</head>
+
+<body bgcolor="4B0082"> <!-- Color morado oscuro -->
+    <table width="100%" height="200">
+        <tr>
+            <td width="30%">
+                <center><img src="logo3.png" alt="Logo de la Empresa"></center>
+            </td>
+            <td>
+                <center>
+                    <h3><font color="white" size="5px">EMPRESA TECNOLOGICA</font></h3>
+                    <h1><font color="#10eee4" size="15px">"ZONA GAMER"</font></h1>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <table width="100%" bgcolor="red" height="30">
+        <tr>
+            <td width="30%">
+                <center>
+                    <font color="white" size="6">Empresa</font>
+                </center>
+            </td>
+            <td width="40%">
+                <center>
+                    <font color="white" size="6">Productos</font>
+                </center>
+            </td>
+            <td width="30%">
+                <center>
+                    <font color="white" size="6">Servicios</font>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <img src="10.png" alt="" height="210px">
+    <img src="25.png" alt="" height="208px" width="640px">
+    <img src="ooo.png" alt="" height="210px" width="487px">
+    <table width="100%">
+        <tr height="400">
+            <td width="30%">
+                <marquee behavior="alternate">
+                    <h1><font color="yellow" size="25px">ELIGE YA</font></h1>
+                </marquee>
+            </td>
+            <td width="70%">
+                <center>
+                    <form onsubmit="redirectToPage(); return false;"> <!-- Llama a la función JavaScript -->
+                        <label><h1>Escoger una Opción:</h1></label>
+                        <br><br>
+                        <select name="editor" id="editor">
+                            <option value="productos">Productos</option>
+                            <option value="spte">Soporte Técnico</option>
+                        </select>
+                        <br><br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <center><h1 size="30px" >WEB MASTER: EFRAIN GARCIA</h1></center>
+</body>
+
+</html>
